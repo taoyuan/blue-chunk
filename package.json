@@ -1,0 +1,35 @@
+{
+  "name": "blue-chunk",
+  "version": "0.1.0",
+  "description": "A fragment and assemble binary library",
+  "license": "MIT",
+  "repository": "",
+  "author": "",
+  "keywords": [
+    ""
+  ],
+  "files": [
+    "lib"
+  ],
+  "main": "./lib/index.js",
+  "typings": "./lib/index.d.ts",
+  "scripts": {
+    "clean": "rimraf lib",
+    "build": "npm run clean && echo Using TypeScript && tsc --version && tsc --pretty",
+    "test": "npm run build && mocha --require ts-node/register --recursive \"test/**/*.test.ts\""
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/chai": "^4.1.4",
+    "@types/mocha": "^5.2.2",
+    "@types/node": "^10.3.3",
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "rimraf": "^2.6.2",
+    "ts-node": "^6.1.1",
+    "typescript": "^2.9.2"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  }
+}
