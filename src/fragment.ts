@@ -1,4 +1,4 @@
-const DEFAULT_CHUNK_SIZE = 16;
+const DEFAULT_CHUNK_SIZE = 20;
 
 export interface OnChunk {
   (chunk: Buffer, index: number): any
